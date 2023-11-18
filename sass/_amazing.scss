@@ -1,0 +1,322 @@
+.amazing {
+    margin: 25px auto;
+    width: 98%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+
+    &-box {
+        width: 254%;
+        height: 100%;
+        background-color: $primery-color;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        padding-right: 30px;
+        position: absolute;
+        // left: -150%;
+        gap: 3px;
+        transition: all 0.4s;
+
+
+        &-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 200px;
+
+            &-icon {
+                &-text {
+                    width: 8rem;
+                    height: 8rem;
+                }
+            }
+
+            &-img {
+                &-box {
+                    width: 10rem;
+                    height: 10rem;
+                }
+            }
+
+            &-seeall {
+                color: $gray-color-2;
+
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                font-weight: 600;
+
+                &-icon {
+                    width: 2rem;
+                    height: 2rem;
+                    transform: rotate(270deg);
+                    fill: $gray-color-2;
+                }
+            }
+        }
+
+        &-kala {
+            width: 200px;
+            height: 260px;
+            background-color: $white-color;
+            padding: 10px;
+            cursor: pointer;
+
+            &-all {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 220px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+
+                &-icon {
+                    fill: $blue-color;
+                    width: 40px;
+                    height: 40px;
+                    padding: 8px;
+                    border: 1px solid $blue-color;
+                    transform: rotate(270deg);
+
+                    border-radius: 100%;
+                    margin-bottom: 10px;
+                }
+
+                & p {
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+
+            // &:nth-child(1) {
+            //     border-top-right-radius: 10px;
+            //     border-bottom-right-radius: 10px;
+            // }
+
+            // &:last-child {
+            //     border-top-left-radius: 10px;
+            //     border-bottom-left-radius: 10px;
+            // }
+
+
+
+
+
+            &-img {
+                width: 150px;
+                height: 150px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            &-price {
+                font-size: 16px;
+                font-weight: 700;
+
+                &-discount {
+                    padding: 5px 8px;
+                    background: $primery-color;
+                    color: $white-color;
+                    border-radius: 100px;
+                    font-size: 11px;
+                    font-weight: 700;
+                    margin-left: 20px;
+                }
+
+                &-box {
+                    margin-top: 20px;
+                    justify-content: flex-end;
+                    display: flex;
+                    align-items: flex-end;
+                }
+
+                &-unit {
+                    font-size: 11px;
+
+                }
+
+                &-last {
+                    font-size: 14px;
+                    color: $gray-color;
+                    font-weight: 600;
+                    text-decoration: line-through;
+                    margin-top: 8px;
+                    margin-right: 100px;
+
+                }
+            }
+
+        }
+    }
+
+    &-icon {
+        fill: $gray-color;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        border: 1px solid $gray-color;
+        background-color: $white-color;
+        border-radius: 100%;
+        position: absolute;
+
+        transition: all 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            fill: $black-color;
+            border: 1px solid $black-color;
+        }
+
+        &-l {
+            left: 0%;
+            top: 50%;
+            transform: translate(50%, -50%) rotate(270deg);
+        }
+
+        &-r {
+            left: 92.5%;
+            top: 50%;
+            transform: translate(50%, -50%) rotate(90deg);
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.amazing-market {
+    width: 100%;
+    height: 100px;
+    background-color: $gray-color-2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &-r {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-discunt {
+            font-size: 14px;
+            font-weight: 800;
+            padding: 2px 10px;
+            background-color: $green-color;
+            border-radius: 100px;
+            color: $white-color;
+        }
+    }
+
+    &-l {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &-img {
+            width: 58px;
+            height: 58px;
+            border-radius: 100%;
+
+            &-box {
+                padding: 7px;
+                border-radius: 100%;
+                background-color: $white-color;
+                position: relative;
+                z-index: 1;
+                cursor: pointer;
+            }
+        }
+
+        &-discunt {
+            position: absolute;
+            background-color: $primery-color;
+            color: $white-color;
+            border-radius: 100px;
+            z-index: 10;
+            font-weight: 600;
+            font-size: 12px;
+            padding: 2px 7px;
+            top: 69%;
+            left: 57%;
+        }
+
+        &-more {
+            cursor: pointer;
+            padding: 10px 10px;
+            border-radius: 100px;
+            background-color: $white-color;
+            display: flex;
+            margin-right: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            
+            & p{
+                color: $green-color;
+            }
+            &-icon {
+                width: 20px;
+                height: 20px;
+                transform: rotate(270deg);
+                fill: $green-color;
+            }
+        }
+    }
+}
+
+
+
+.img-amzing{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0 10px;
+
+    &-box{
+        cursor: pointer;
+        width: 320px;
+        height: 240px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    &-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    &-2{
+        &-box{
+            width: 49%;
+            height: 240px;
+            overflow: hidden;
+            border-radius: 15px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        &-img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,323 @@
+.header {
+    &-up-img {
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    &-box {
+        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+
+        &-cta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-between;
+
+        }
+    }
+
+    &-hr-ver {
+        width: 2px;
+        height: 25px;
+        border: 5px;
+        background-color: $gray-color-2;
+    }
+
+    &-button {
+        cursor: pointer;
+        width: 12.5rem;
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        border: 0.5px solid #999;
+        background-color: transparent;
+
+        font-weight: 600;
+        font-size: 13px;
+
+        & svg {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        & span {
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+
+    &-shoping-skeat {
+        cursor: pointer;
+        margin-right: 5px;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &-search {
+        padding: 8px 45px 8px 8px;
+        height: 4.2rem;
+        width: 60rem;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        background-color: $gray-color-2;
+        font-size: 13px;
+
+        &-box {
+            position: relative;
+
+            &-icon {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 51%;
+                left: 96%;
+                width: 2rem;
+                height: 2rem;
+                fill: $gray-color-1;
+            }
+        }
+
+    }
+
+    &-rigth-box {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+
+
+
+
+
+}
+
+//Navbar
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 18px;
+
+    &-ul {
+        list-style: none;
+        display: flex;
+        font-size: 14px;
+        color: $gray-color;
+        fill: $gray-color;
+        align-items: center;
+
+
+
+        & li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: max-content;
+            padding: 10px;
+            gap: 6px;
+            cursor: pointer;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $primery-color;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
+
+            &:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+
+
+    }
+
+    &-main {
+        color: $black-color !important;
+        font-weight: 600;
+
+        & span {
+            color: $black-color !important;
+        }
+
+    }
+
+    &-icon {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.location {
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+
+    &-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+
+.search-pupop {
+    z-index: 11;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 60rem;
+    height: 18rem;
+    // background-color: #999;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    border: .5px solid #ddd;
+    margin-top: -43px;
+    background-color: #fff;
+    transition: all 0.2s;
+    opacity: 0;
+    visibility: hidden;
+
+    &-input {
+        width: 55rem;
+        height: 4.5rem;
+        outline: none;
+        border: none;
+        padding: 8px 45px 8px 8px;
+        font-size: 13px;
+
+        &-icon {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 14%;
+            left: 96%;
+            width: 2rem;
+            height: 2rem;
+            fill: $black-color;
+        }
+    }
+
+
+
+    &-hr {
+        width: 95%;
+        height: 1px;
+        background: #19bfd3;
+        margin: 0 auto;
+    }
+
+    &-title {
+        margin: 25px 15px 25px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-p {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        &-icon {
+            width: 22px;
+            height: 22px;
+            fill: $gray-color-1;
+        }
+    }
+
+
+
+
+
+
+    &-mostvisited {
+        padding: 7px 10px;
+        border: 1px solid $gray-color;
+        width: max-content;
+        display: flex;
+        text-decoration: none;
+        border-radius: 20px;
+        align-items: center;
+        gap: 10px;
+
+        &-box {
+            left: -29%;
+            position: absolute;
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            padding: 0 20px;
+            transition: all 0.2s;
+        }
+
+        &-icon {
+            width: 2rem;
+            height: 2rem;
+            transform: rotate(270deg);
+        }
+
+        &-p {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        &-move {
+            position: absolute;
+            top: 65%;
+            padding: 10px;
+            border-radius: 100%;
+            width: 4rem;
+            height: 4rem;
+
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            background-color: $white-color;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &-l {
+                transform: rotate(270deg);
+                left: 4%;
+
+            }
+
+
+
+            &-r {
+                transform: rotate(90deg);
+                left: 89%;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+
+
+    // &-fade{
+    //     background-color: rgba(0, 0, 0, 0.3);
+    //     width: 100%;
+    //     height: 100vh;
+    //     position: absolute;
+    //     top: 14.5%;
+    //     left: 0%;
+    // }
+}

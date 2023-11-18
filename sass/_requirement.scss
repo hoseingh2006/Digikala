@@ -1,0 +1,101 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+@font-face {
+    font-family: yekan;
+    src: url(../font/Qs_Iranyekan.ttf);
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $gray-color;
+    font-family: yekan, sans-serif;
+}
+// td, th {
+//     border:solid black 1px;
+// }
+
+// th {
+//     background-color: blue;
+//     border-top: none;
+// }
+
+// td:first-child, th:first-child {
+//      border-left: none;
+// }
+
+
+// @font-face {
+//     font-family: yekan-regular;
+//     src: url('../font/yekan-regular.eot');
+//     src: url('../font/yekan-regular.eot?#iefix') format('FontName-opentype'),
+//         url('../font/yekan-regular.woff') format('woff'),
+//         url('../font/Yekan.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+body {
+    direction: rtl;
+    margin-bottom: 60rem;
+
+}
+
+header {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.103);
+}
+
+.hr-line {
+    width: 100%;
+    height: 1px;
+    background-color: $gray-color-3;
+}
+
+.visibale {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.disable {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.fade {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: none;
+
+    &-visible {
+        display: block;
+    }
+}
+
+.mainfade {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: none;
+
+    &-visible {
+        display: block;
+    }
+}
+
+
+
+
