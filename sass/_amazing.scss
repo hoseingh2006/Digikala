@@ -7,15 +7,12 @@
     position: relative;
 
     &-box {
-        width: 254%;
         height: 100%;
         background-color: $primery-color;
         display: flex;
         align-items: center;
-        padding: 10px;
-        padding-right: 30px;
+        padding: 10px 90px;
         position: absolute;
-        // left: -150%;
         gap: 3px;
         transition: all 0.4s;
 

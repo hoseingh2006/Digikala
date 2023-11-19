@@ -576,13 +576,11 @@ header {
   border-radius: 20px;
   position: relative; }
   .amazing-box {
-    width: 254%;
     height: 100%;
     background-color: #e6123d;
     display: flex;
     align-items: center;
-    padding: 10px;
-    padding-right: 30px;
+    padding: 10px 90px;
     position: absolute;
     gap: 3px;
     transition: all 0.4s; }

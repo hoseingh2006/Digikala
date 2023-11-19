@@ -172,7 +172,7 @@ search_pupop_r.addEventListener("click", MoveSearchR)
 
 function MoveSearchL() {
     if (cunt_search < 0) {
-        cunt_search += 50
+        cunt_search += 100
         search_pupop_box.style.left = `${cunt_search}px`
         search_pupop_r.classList.add("visibale")
     }
@@ -184,7 +184,7 @@ function MoveSearchL() {
 
 function MoveSearchR() {
     if (cunt_search > search_pupop_width) {
-        cunt_search -= 50
+        cunt_search -= 100
         search_pupop_box.style.left = `${cunt_search}px`
         search_pupop_l.classList.remove("disable")
     }
@@ -282,19 +282,21 @@ const amazing_move_l = $.querySelector(".amazing-icon-l")
 const amazing_move_r = $.querySelector(".amazing-icon-r")
 const amazing_box = $.querySelector(".amazing-box")
 const amazing = $.querySelector(".amazing")
-const amazing_width = Number(amazing.offsetWidth) - Number(amazing_box.offsetWidth)
+const amazing_width = Number(amazing.offsetWidth) - Number(amazing_box.offsetWidth)+90
 console.log(amazing_width)
 let amazing_cuont = amazing_width
 amazing_box.style.left = `${amazing_width}px`
 amazing_move_l.addEventListener("click", AmazingMoveLeft)
 
 function AmazingMoveLeft() {
-    if (amazing_cuont < -60) {
-        amazing_cuont += 50
+    
+    if (amazing_cuont+90 < 0) {
+        amazing_cuont += 100
         amazing_box.style.left = `${amazing_cuont}px`
         amazing_move_r.classList.add("visibale")
+        console.log(amazing_cuont)
     }
-    if (amazing_cuont > -60) {
+    if (amazing_cuont+90 > 0) {
 
         amazing_move_l.classList.add("disable")
     }
@@ -304,12 +306,12 @@ function AmazingMoveLeft() {
 amazing_move_r.addEventListener("click", AmazingMoveRight)
 
 function AmazingMoveRight() {
-    if (amazing_cuont > amazing_width) {
-        amazing_cuont -= 50
+    if (amazing_cuont+90 > amazing_width) {
+        amazing_cuont -= 100
         amazing_box.style.left = `${amazing_cuont}px`
         amazing_move_l.classList.remove("disable")
     }
-    if (amazing_cuont < amazing_width) {
+    if (amazing_cuont-90 <= amazing_width) {
         amazing_move_r.classList.remove("visibale")
     }
 }
@@ -329,7 +331,7 @@ brand_action_r.addEventListener("click", BrandMoveR)
 
 function BrandMoveL() {
     if (brand_cunt < 0) {
-        brand_cunt += 50
+        brand_cunt += 100
         brand_part.style.left = `${brand_cunt}px`
         brand_action_r.classList.add("visibale")
     }
@@ -340,7 +342,7 @@ function BrandMoveL() {
 
 function BrandMoveR() {
     if (brand_cunt > brand_width) {
-        brand_cunt -= 50
+        brand_cunt -= 100
         brand_part.style.left = `${brand_cunt}px`
     }
     if (brand_cunt <= brand_width) {
