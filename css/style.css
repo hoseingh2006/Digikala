@@ -19,7 +19,7 @@
     cursor: pointer;
     width: 6.5rem;
     height: 6.5rem;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 600;
     align-items: center; }
   .story-img-after {
@@ -654,7 +654,8 @@ header {
           margin-top: 20px;
           justify-content: flex-end;
           display: flex;
-          align-items: flex-end; }
+          align-items: flex-end;
+          gap: 5px; }
         .amazing-box-kala-price-unit {
           font-size: 11px; }
         .amazing-box-kala-price-last {
@@ -827,20 +828,22 @@ header {
       font-weight: 600;
       display: inline-block;
       padding: 20px 0;
-      border-left: 1px solid #aaa;
+      border-left: 1px solid #ddd;
       text-decoration: none; }
       .grouping_Proposal-box-part:first-child {
         border-right: none; }
       .grouping_Proposal-box-part:nth-child(1), .grouping_Proposal-box-part:nth-child(2), .grouping_Proposal-box-part:nth-child(3), .grouping_Proposal-box-part:nth-child(4), .grouping_Proposal-box-part:nth-child(5), .grouping_Proposal-box-part:nth-child(6), .grouping_Proposal-box-part:nth-child(7) {
-        border-bottom: 1px solid #aaa; }
+        border-bottom: 1px solid #ddd; }
       .grouping_Proposal-box-part:nth-child(7), .grouping_Proposal-box-part:last-child {
         border-left: none; }
 
 .grouping_brand {
   text-align: center;
-  border: 1px solid #aaa;
+  border: 1px solid #ddd;
   padding: 20px 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0 20px;
+  border-radius: 20px; }
   .grouping_brand-box {
     position: relative;
     margin-top: 20px;
@@ -853,7 +856,7 @@ header {
   .grouping_brand-img {
     width: 120px;
     height: 120px;
-    border-left: 1px solid #aaa;
+    border-left: 1px solid #ddd;
     padding: 10px;
     object-fit: contain; }
     .grouping_brand-img-last {
@@ -878,3 +881,173 @@ header {
     .grouping_brand-icon-l {
       left: 0%;
       transform: translate(50%, -50%) rotate(270deg); }
+
+.grouping_visit {
+  overflow: hidden;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .grouping_visit-box {
+    padding: 0 0 20px; }
+    .grouping_visit-box-title {
+      margin: 20px; }
+      .grouping_visit-box-title-name {
+        font-size: 15px;
+        font-weight: 600; }
+      .grouping_visit-box-title-text {
+        font-size: 12px;
+        color: #999; }
+    .grouping_visit-box-img {
+      width: 100%;
+      height: 100%;
+      padding: 10px; }
+      .grouping_visit-box-img:nth-child(1), .grouping_visit-box-img:nth-child(3) {
+        border-left: 1px solid #ddd; }
+      .grouping_visit-box-img:nth-child(1), .grouping_visit-box-img:nth-child(2) {
+        border-bottom: 1px solid #ddd; }
+      .grouping_visit-box-img-box {
+        display: grid;
+        grid-template-columns: repeat(2, 150px); }
+    .grouping_visit-box-link {
+      text-decoration: none;
+      color: #19bfd3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px; }
+      .grouping_visit-box-link-2 {
+        color: #941b80; }
+      .grouping_visit-box-link p {
+        color: inherit; }
+      .grouping_visit-box-link-icon {
+        width: 20px;
+        height: 20px;
+        transform: rotate(270deg);
+        fill: #19bfd3; }
+        .grouping_visit-box-link-icon-2 {
+          fill: #941b80; }
+  .grouping_visit-hr {
+    width: 1px;
+    background-color: #ddd; }
+
+.digiplus {
+  height: 400px;
+  display: flex;
+  background-color: #941b80;
+  border-radius: 20px;
+  margin: 20px; }
+  .digiplus-r {
+    background-image: url("https://www.digikala.com/statics/img/png/digiplus/plus-widget.png");
+    width: 60%;
+    height: 100%;
+    background-position: bottom;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    padding: 40px; }
+    .digiplus-r-text {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 5px; }
+    .digiplus-r-btn {
+      width: 100px;
+      height: 35px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      border: 1px solid #fff;
+      border-radius: 10px; }
+      .digiplus-r-btn-icon {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+        transform: rotate(270deg); }
+      .digiplus-r-btn p {
+        color: inherit;
+        text-decoration: none; }
+  .digiplus-l {
+    width: 140%;
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 10px; }
+    .digiplus-l-header {
+      margin: 20px;
+      display: flex;
+      justify-content: space-between; }
+    .digiplus-l-title {
+      display: flex;
+      align-items: center;
+      gap: 10px; }
+      .digiplus-l-title-icon {
+        width: 25px;
+        height: 25px;
+        fill: #941b80; }
+      .digiplus-l-title-text {
+        font-size: 15px;
+        font-weight: 600; }
+    .digiplus-l-box {
+      padding: 0 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 18px;
+      row-gap: 30px; }
+      .digiplus-l-box-img {
+        width: 125px;
+        height: 125px;
+        cursor: pointer; }
+
+.digiclub {
+  height: 100px;
+  background-image: linear-gradient(76.02deg, #35a6c8 33.32%, #007295 71.55%), radial-gradient(21.29% 87.33% at 50% 50.67%, #7cf2f6 0, #35a6c8 100%);
+  margin: 20px;
+  border-radius: 20px;
+  display: flex; }
+  .digiclub-r {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px; }
+  .digiclub-l {
+    width: 130%;
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+    .digiclub-l-box {
+      height: 75%;
+      width: 263px;
+      background-color: white;
+      overflow: hidden;
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      padding-right: 20px;
+      justify-content: space-between; }
+      .digiclub-l-box:nth-child(3) {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; }
+      .digiclub-l-box:nth-child(1) {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; }
+      .digiclub-l-box-img {
+        width: 60%;
+        height: 100%;
+        object-fit: cover; }
+      .digiclub-l-box-text {
+        display: flex;
+        gap: 10px;
+        width: max-content;
+        font-size: 13px; }
+        .digiclub-l-box-text p {
+          color: #000; }
+      .digiclub-l-box-icon {
+        width: 20px;
+        height: 20px;
+        fill: #19bfd3; }

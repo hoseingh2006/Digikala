@@ -178,6 +178,7 @@ function MoveSearchL() {
     }
     if(cunt_search >= 0){
         search_pupop_l.classList.add("disable")
+        search_pupop_box.style.left = `${0}px`
     }
 
 }
@@ -299,6 +300,7 @@ function AmazingMoveLeft() {
     if (amazing_cuont+90 > 0) {
 
         amazing_move_l.classList.add("disable")
+        amazing_box.style.left = `${0}px`
     }
 
 }
@@ -330,13 +332,15 @@ brand_action_l.addEventListener("click", BrandMoveL)
 brand_action_r.addEventListener("click", BrandMoveR)
 
 function BrandMoveL() {
-    if (brand_cunt < 0) {
-        brand_cunt += 100
+    if (brand_cunt <= 0) {
+        brand_cunt += 85
         brand_part.style.left = `${brand_cunt}px`
         brand_action_r.classList.add("visibale")
+        brand_action_r.classList.remove("disable")
     }
     if (brand_cunt >= 0) {
         brand_action_l.classList.add("disable")
+        brand_part.style.left = `${0}px`
     }
 }
 
@@ -344,6 +348,7 @@ function BrandMoveR() {
     if (brand_cunt > brand_width) {
         brand_cunt -= 100
         brand_part.style.left = `${brand_cunt}px`
+        brand_action_l.classList.remove("disable")
     }
     if (brand_cunt <= brand_width) {
         brand_action_r.classList.add("disable")
